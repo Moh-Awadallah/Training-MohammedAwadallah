@@ -25,7 +25,7 @@ _Technology and coding have always been my passions. I began by creating simple 
 ### 📊 GitHub stats 📊
 
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=Moh-Awadallah&show_icons=true&theme=dark&text_color=fff&border_color=79ff97&hide_title=true)](https://github.com/bugahontas) | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Moh-Awadallah&theme=dark&text_color=fff&border_color=79ff97&layout=compact)](https://github.com/bugahontas) 
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=Moh-Awadallah&show_icons=true&theme=dark&text_color=fff&border_color=79ff97&hide_title=true)](https://github.com/Moh-Awadallah) | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Moh-Awadallah&theme=dark&text_color=fff&border_color=79ff97&layout=compact)](https://github.com/Moh-Awadallah) 
 | ----------- | ------------ |
 
 ---
