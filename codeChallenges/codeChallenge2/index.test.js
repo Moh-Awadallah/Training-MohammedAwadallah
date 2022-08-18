@@ -6,27 +6,21 @@
  * Write a function that, given a number, returns a factorial of the number
  */
 function factorial(number) {
-    let fact = Math.abs(number);
-    if (number == 0 || number == 1) return 1; //base cases
-    if (number > 1) fact = fact * factorial(number - 1);
-        return fact;
+    let fact = Math.abs(number)
+    if (number == 0 || number == 1) return 1 //base cases
+    if (number > 1) fact = fact * factorial(number - 1)
+    return fact
 }
-// describe("Tests", () => {
-//     it("test factorial", () => {
-//         expect(factorial(0)).toEqual(1);
-//         expect(factorial(1)).toEqual(1);
-//         expect(factorial(5)).toEqual(120);
-//         expect(factorial(6)).toEqual(720);
-//         expect(factorial(11)).toEqual(39916800);
-//     });
-// });
+
+describe("Tests", () => {
+    it("test factorial", () => {
+        expect(factorial(0)).toEqual(1)
+        expect(factorial(1)).toEqual(1)
+        expect(factorial(5)).toEqual(120)
+        expect(factorial(6)).toEqual(720)
+        expect(factorial(11)).toEqual(39916800)
+    })
+})
 
 // The time complexity of the solution is O(n)
-
-console.log(factorial(0));
-console.log(factorial(1));
-console.log(factorial(5));
-console.log(factorial(6));
-console.log(factorial(11));
-
 
