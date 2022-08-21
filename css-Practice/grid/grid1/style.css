@@ -1,0 +1,39 @@
+
+
+/* basic styles for learning */
+
+.grid-container{
+    display: grid;
+    grid-template-columns:  200px 100px;
+    grid-template-rows: 100px 200px;
+    /* grid-template-areas : "header header header" +
+                          "body body body"+
+                          "footer footer footer"; */
+                        
+                                                                
+} 
+.grid-item-1{
+    /* grid-area: header; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: solid;
+}
+.grid-item-2{
+    /* grid-area: body; */
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border: solid;
+}
+.grid-item-3{
+    grid-column: 3 / 4;
+    border : solid
+}
+
+.grid-item-4{
+    grid-row: 4/5;
+    border: solid ;
+}
+
+.grid-item-5{
+    border: solid 4px
+}
