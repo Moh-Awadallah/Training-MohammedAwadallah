@@ -1,0 +1,284 @@
+/* Grid CSS */
+
+body {
+  background-image: url("https://picsum.photos/1920");
+}
+
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: "mainPicture secondaryPicture"
+    "mainPicture shopNow";
+}
+
+#mainPicture {
+  grid-area: mainPicture;
+  background-image: url("https://picsum.photos/883");
+}
+
+#secondaryPicture {
+  grid-area: secondaryPicture;
+  background-image: url("https://picsum.photos/295");
+}
+
+#shopNow {
+  grid-area: shopNow;
+  background-image: url("https://picsum.photos/294");
+  cursor: pointer;
+}
+
+#shopText {
+  color: #FF6200;
+  border-bottom: 3px solid #FF6200;
+  background-color: rgba(255, 255, 255, 0.8);
+
+
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#headline {
+  animation: slideUp 1s;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 5px solid #FF6200;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* float: right;
+  position: absolute; */
+  /* top: 100px; */
+  /* right: -50px; */
+  z-index: 1;
+  padding: 25px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "category-1 category-2 category-3"
+    "category-4 category-4 category-3"
+    "category-5 category-5 category-5";
+}
+
+#category-1 {
+  grid-area: category-1;
+  background-image: url("https://picsum.photos/383");
+
+
+}
+
+#category-2 {
+  grid-area: category-2;
+  background-image: url("https://picsum.photos/212");
+}
+
+#category-3 {
+  grid-area: category-3;
+  background-image: url("https://picsum.photos/382");
+}
+
+#category-4 {
+  grid-area: category-4;
+  background-image: url("https://picsum.photos/775");
+}
+
+#category-5 {
+  grid-area: category-5;
+  background-image: url("https://picsum.photos/1166");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: flex-end;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  height: 25px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
+
+/* navbar */
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+
+#links {
+  display: flex;
+  gap: 15px;
+
+}
+
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #FF6200;
+  font-weight: 700;
+}
+
+/* font adjustments */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #FF6200;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+
+}
+
+h4 {
+  font-weight: 7000;
+  font-size: 22px;
+  margin: 0px 0px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+
+
+  }
+
+  #links {
+    display: none
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+
+  #shopText {
+    margin-left: -55px;
+  }
+
+  #heroGrid {
+    grid-template-areas: "mainPicture mainPicture"
+      "secondaryPicture shopNow";
+  }
+
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "category-1"
+      "category-2"
+      "category-4"
+      "category-3"
+      "category-5";
+  }
+}
+
+/* animation : 
+its an attempt but i couldnt do it tbh i been trying to fix it but it took time that i should put somewhere else */
+
+/* .animate {
+  animation-duration: 0.75s;
+  animation-delay: 0.5s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: backwards;
+}
+
+
+.animate.glow {
+  animation-name: animate-glow;
+  animation-timing-function: ease;
+}
+
+
+
+.delay-1 {
+  animation-delay: 0.6s;
+}
+
+.delay-2 {
+  animation-delay: 0.7s;
+}
+
+.delay-3 {
+  animation-delay: 0.8s;
+} */
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
