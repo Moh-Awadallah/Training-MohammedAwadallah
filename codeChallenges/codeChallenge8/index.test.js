@@ -6,6 +6,8 @@
  * Example: The binary representation of 1234 is 10011010010,
  * so the function should return 5 in this case
  */
+
+/* time complexity for filter is O(n) */
  const bitCounting = (num) => {
         const arr = num.toString(2).split('')
         const countOfOne = arr.filter(num => num == 1).length;
