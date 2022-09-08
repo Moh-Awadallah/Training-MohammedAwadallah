@@ -10,10 +10,10 @@ secondMax([-1, -5, 2])== -1
 
 /*time Complexity O(N)*/
 const secondMax = function (array) {
-  let max = array[0];
-  let second = array[0];
+  let max = -Infinity
+  let second = -Infinity
 
-  for (let i = 1; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] > max) {
       second = max;
       max = array[i];
@@ -28,4 +28,3 @@ const secondMax = function (array) {
   return second;
 };
 
-console.log(secondMax([-1, -5, 2]));
