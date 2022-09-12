@@ -12,12 +12,13 @@ nextBigger(111)==-1
 nextBigger(531)==-1
 */
 /*i dont know the time complexity 
-but if i had to guess it would be O(n^2) because of the recursion and arr methods*/
+but if i had to guess it would be O(n) because of the recursion and arr methods*/
 const nextBigger = function (num) {
     if (num.toString() === num.toString().split("").sort((a, b) => b - a).join("")) {
         return -1;
       }
       const m = num.toString().split("").sort((a, b) => b - a).join("");
+      
 
       const incrementAndCheck = () => {
         num++;
@@ -30,4 +31,3 @@ const nextBigger = function (num) {
       incrementAndCheck();
       return num;
     }
-
