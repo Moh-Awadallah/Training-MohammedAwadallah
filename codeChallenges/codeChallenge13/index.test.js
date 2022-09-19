@@ -31,7 +31,7 @@ Array.prototype.isSubsetOf = function (target) {
 
 
 
-//* attemptin Extra Credit:
+
 
 // const obj = {};
 // target.forEach((current) => {
