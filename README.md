@@ -1,5 +1,3 @@
-# Training-MohammedAwadallah
-
 
 ### 🌹 About me 🌹
 
@@ -37,4 +35,3 @@ _Technology and coding have always been my passions. I began by creating simple 
 ---
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Ubuntu&color=%230EAA20&vCenter=true&lines=Thank%20You%20For%20Stopping%20by!)](https://git.io/typing-svg)
-
